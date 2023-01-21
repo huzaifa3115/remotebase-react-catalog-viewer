@@ -44,7 +44,7 @@ function App() {
       const length = catalogs.length - 1;
 
       if (myIndex >= length) return setActiveIndex((t) => 0);
-      setActiveIndex(counter => counter + 1);
+      setActiveIndex(index => index + 1);
 
       if(myIndex === 10) clearInterval(timeout);
 
