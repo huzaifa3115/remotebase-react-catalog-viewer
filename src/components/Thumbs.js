@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-function Thumbs({ items, currentIndex, onClick = () => {} }) {
+function Thumbs({ items, currentIndex }) {
     
     return (
         <Fragment>
@@ -10,7 +10,6 @@ function Thumbs({ items, currentIndex, onClick = () => {} }) {
                         id={idx} 
                         key={idx} 
                         data-testid={'thumb-button-' + idx}
-                        onClick={() => onClick(idx)}
                     >
                         <span 
                             className={'inline-flex w-90 pa-4 image-thumb ' + 
